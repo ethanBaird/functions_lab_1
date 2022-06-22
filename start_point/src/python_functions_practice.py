@@ -42,10 +42,23 @@ add_result = add_string_as_number("1", "2")
 month_names = {
     1: "January",
     2: "February",
-    3: "etc"
+    3: "March",
+    4: "April",
+    5: "May",
+    6: "June",
+    7: "July",
+    8: "August",
+    9: "September",
+    10: "October",
+    11: "November",
+    12: "December"
 }
 
 def number_to_full_month_name(month_number):
     return month_names[month_number]
 
 result = number_to_full_month_name(1)
+
+result = number_to_full_month_name(3) 
+
+result = number_to_full_month_name(9)
