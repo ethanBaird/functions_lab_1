@@ -15,3 +15,8 @@ def multiply(num_01, num_02):
     return num_01 * num_02
 
 multiply_result = multiply(4, 2)
+
+def divide(num_01, num_02):
+    return num_01 / num_02
+
+divide_result = divide(10, 2)
