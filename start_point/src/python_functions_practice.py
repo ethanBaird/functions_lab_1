@@ -81,3 +81,8 @@ def string_reverser(string):
     return string [::-1]
 
 reversed_string = string_reverser("Hello")
+
+def celsius_converter(Faren):
+    return round(((Faren - 32) * 5/9), 3 )
+
+in_celsius = celsius_converter(0)
