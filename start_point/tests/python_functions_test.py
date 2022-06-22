@@ -98,7 +98,9 @@ class TestPythonFunctionPractice(unittest.TestCase):
     in_celsius = celsius_converter(0)
     self.assertEqual(-17.778, in_celsius)
     
-
+  def test_palendrome(self):
+    is_palendrome = palendrome_checker("hannah")
+    self.assertEqual(True, is_palendrome)
 
 if __name__ == '__main__':
     unittest.main()

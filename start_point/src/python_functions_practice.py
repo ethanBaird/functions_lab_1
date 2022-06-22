@@ -86,3 +86,13 @@ def celsius_converter(Faren):
     return round(((Faren - 32) * 5/9), 3 )
 
 in_celsius = celsius_converter(0)
+
+def palendrome_checker(string):
+    if string == string [::-1]:
+        return True
+    else:
+        return False
+
+is_palendrome = palendrome_checker("hannah")
+
+
