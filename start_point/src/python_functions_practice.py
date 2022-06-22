@@ -30,3 +30,8 @@ def join_string(string1, string2):
     return string1 + string2
 
 joined_string = join_string("Mary had a little lamb, ", "its fleece was white as snow")
+
+def add_string_as_number(string1, string2):
+    return int(string1) + int(string2)
+
+add_result = add_string_as_number("1", "2")
