@@ -71,3 +71,8 @@ result = number_to_short_month_name(1)
 result = number_to_short_month_name(4)
 
 result = number_to_short_month_name(10)
+
+def find_volume_of_cube(length_of_side):
+    return length_of_side * length_of_side  * length_of_side
+
+volume_of_cube = find_volume_of_cube(2)
