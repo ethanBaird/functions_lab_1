@@ -104,13 +104,16 @@ is_palendrome = palendrome_checker("hannah")
 three_to_one_hundred = list(range(3, 101))
 
 def return_prime(list):
-    prime_numbers = []
+    prime_numbers = [2, ]
     for number in list:
-        if number / number == 1:
-            prime_numbers.append(number)
-        else:
+        is_prime = True
+        for prime_number in prime_numbers:
+            if number % prime_number == 0:
+                is_prime = False
+        if is_prime == False:
             pass
+        else:
+            prime_numbers.append(number)
+        
+    prime_numbers.pop(0)    
     return prime_numbers
-
-prime_numbers = return_prime(three_to_one_hundred)
-
