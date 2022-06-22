@@ -1,3 +1,6 @@
+from calendar import month_name
+
+
 def return_10():
     return 10
 
@@ -35,3 +38,14 @@ def add_string_as_number(string1, string2):
     return int(string1) + int(string2)
 
 add_result = add_string_as_number("1", "2")
+
+month_names = {
+    1: "January",
+    2: "February",
+    3: "etc"
+}
+
+def number_to_full_month_name(month_number):
+    return month_names[month_number]
+
+result = number_to_full_month_name(1)
