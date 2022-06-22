@@ -2,6 +2,8 @@ from src.python_functions_practice import *
 
 import unittest
 
+prime_numbers_for_test = [3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97]
+
 class TestPythonFunctionPractice(unittest.TestCase):
 
   def test_return_10(self):
@@ -101,6 +103,12 @@ class TestPythonFunctionPractice(unittest.TestCase):
   def test_palendrome(self):
     is_palendrome = palendrome_checker("hannah")
     self.assertEqual(True, is_palendrome)
+
+  
+  def test_return_prime(self):
+    prime_numbers = return_prime(three_to_one_hundred)
+    self.assertEqual(prime_numbers_for_test, prime_numbers)
+
 
 if __name__ == '__main__':
     unittest.main()

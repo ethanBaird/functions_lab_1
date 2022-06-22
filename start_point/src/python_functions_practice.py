@@ -65,6 +65,9 @@ result = number_to_full_month_name(9)
 
 def number_to_short_month_name(month_number):
     return month_names[month_number][1]
+    # ALT
+    # short_month_name = number_to_full_month_name(month_number)[0:3]
+    # return short_month_name
 
 result = number_to_short_month_name(1)
 
@@ -74,10 +77,13 @@ result = number_to_short_month_name(10)
 
 def find_volume_of_cube(length_of_side):
     return length_of_side * length_of_side  * length_of_side
+    # ALT
+    # length_of_side ** 3
 
 volume_of_cube = find_volume_of_cube(2)
 
 def string_reverser(string):
+    # this method is called slicing the string
     return string [::-1]
 
 reversed_string = string_reverser("Hello")
@@ -95,4 +101,16 @@ def palendrome_checker(string):
 
 is_palendrome = palendrome_checker("hannah")
 
+three_to_one_hundred = list(range(3, 101))
+
+def return_prime(list):
+    prime_numbers = []
+    for number in list:
+        if number / number == 1:
+            prime_numbers.append(number)
+        else:
+            pass
+    return prime_numbers
+
+prime_numbers = return_prime(three_to_one_hundred)
 
