@@ -76,3 +76,8 @@ def find_volume_of_cube(length_of_side):
     return length_of_side * length_of_side  * length_of_side
 
 volume_of_cube = find_volume_of_cube(2)
+
+def string_reverser(string):
+    return string [::-1]
+
+reversed_string = string_reverser("Hello")
