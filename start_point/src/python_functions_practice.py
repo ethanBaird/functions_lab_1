@@ -40,25 +40,34 @@ def add_string_as_number(string1, string2):
 add_result = add_string_as_number("1", "2")
 
 month_names = {
-    1: "January",
+    1: ["January", "Jan"],
     2: "February",
-    3: "March",
-    4: "April",
+    3: ["March", "Mar"],
+    4: ["April", "Apr"],
     5: "May",
     6: "June",
     7: "July",
     8: "August",
-    9: "September",
-    10: "October",
+    9: ["September", "Sept"],
+    10: ["October", "Oct"],
     11: "November",
     12: "December"
 }
 
 def number_to_full_month_name(month_number):
-    return month_names[month_number]
+    return month_names[month_number][0]
 
 result = number_to_full_month_name(1)
 
 result = number_to_full_month_name(3) 
 
 result = number_to_full_month_name(9)
+
+def number_to_short_month_name(month_number):
+    return month_names[month_number][1]
+
+result = number_to_short_month_name(1)
+
+result = number_to_short_month_name(4)
+
+result = number_to_short_month_name(10)
